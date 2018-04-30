@@ -7,12 +7,12 @@
 module load caffe
 hostname
 
-mkdir /local/tmp/jem_color/
+mkdir /local/tmp/color/
 
-cp /home/tntech.edu/jemoran42/Caffe/Cars/color/* /local/tmp/jem_color/
-cp /home/tntech.edu/jemoran42/Caffe/Cars/color/Caffe_Output/mobilenet.caffemodel /local/tmp/jem_color/
+cp /home/tntech.edu/yourusername/path_to_your_files/* /local/tmp/color/
+cp /home/tntech.edu/yourusername/path_to_your_files/mobilenet.caffemodel /local/tmp/color/
 
-cd /local/tmp/jem_color/
+cd /local/tmp/color/
 
 START=$(date +%s.%N)
 
@@ -27,7 +27,7 @@ END=$(date +%s.%N)
 DIFF=$(echo "$END - $START" | bc)
 echo $DIFF
 
-cp *.caffemodel /home/tntech.edu/jemoran42/Caffe/Cars/color/Caffe_Output/
+cp *.caffemodel /home/tntech.edu/yourusername/path_to_your_files/
 
 cd ..
-rm -rf jem_color
+rm -rf color
