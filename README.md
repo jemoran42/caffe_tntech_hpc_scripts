@@ -1,2 +1,2 @@
-# caffe_tntech_hpc_scripts
-These are just a few bash and python scripts specific to the Tenn Tech High Performance Computing Server for usage with Caffe
+# Caffe TNTech HPC Scripts
+These scripts are not 100% as-is. You must change a few directory paths.
