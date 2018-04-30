@@ -2,9 +2,9 @@ from random import shuffle
 import glob
 import cv2
 shuffle_data = True  # shuffle the addresses before saving
-hdf5_path = '/home/tntech.edu/jemoran42/Caffe/Cars/SqueezeNet/SqueezeNet/SqueezeNet_v1.1/train.h5'  # address to where you want to save the hdf5 file
-car_train_path = '/home/tntech.edu/jemoran42/Caffe/Cars/car_ims/*.jpg'
-hdf5_test_path = '/home/tntech.edu/jemoran42/Caffe/Cars/SqueezeNet/SqueezeNet/SqueezeNet_v1.1/test.h5'
+hdf5_path = '/path_to_files/train.h5'  # address to where you want to save the hdf5 file
+car_train_path = '/path_to_renamed_car_images/*.jpg'
+hdf5_test_path = '/path_to_files/test.h5'
 
 # read addresses and labels from the 'train' folder
 addrs = glob.glob(car_train_path)
@@ -124,7 +124,7 @@ for i in range(len(test_addrs)):
     addr = test_addrs[i]
     img = cv2.imread(addr)
     img = cv2.resize(img, (SIZE, SIZE), interpolation=cv2.INTER_CUBIC)
-    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    # img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
     # add any image pre-processing here
 
