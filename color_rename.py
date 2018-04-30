@@ -1,9 +1,10 @@
 import os
 import shutil
 
-path = '/home/tntech.edu/jemoran42/Caffe/Cars/color'
-train_path = '/home/tntech.edu/jemoran42/Caffe/Cars/color_train/'
-test_path = '/home/tntech.edu/jemoran42/Caffe/Cars/color_test/'
+user_path = '/home/tntech.edu/yourusername/path_to_dir/'
+path = user_path + 'color'
+train_path = user_path + 'color_train/'
+test_path = user_path + 'color_test/'
 index = 0
 
 files = os.listdir(path)
