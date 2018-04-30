@@ -10,6 +10,6 @@ module load caffe
 hostname
 
 echo 'Training'
-caffe train --solver=/home/tntech.edu/jemoran42/Caffe/caffe/models/bvlc_googlenet/quick_solver.prototxt --weights=/home/tntech.edu/jemoran42/Caffe/caffe/models/bvlc_googlenet/bvlc_googlenet.caffemodel -gpu=0
+caffe train --solver=/home/tntech.edu/yourusername/Caffe/caffe/models/bvlc_googlenet/quick_solver.prototxt --weights=/home/tntech.edu/yourusername/Caffe/caffe/models/bvlc_googlenet/bvlc_googlenet.caffemodel -gpu=0
 
 echo 'Done'
