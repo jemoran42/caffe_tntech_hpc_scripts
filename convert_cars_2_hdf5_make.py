@@ -2,10 +2,10 @@ from random import shuffle
 import glob
 import cv2
 shuffle_data = True  # shuffle the addresses before saving
-hdf5_train1_path = '/home/tntech.edu/jemoran42/Caffe/All_Networks/Datasets/make/train1.h5'  # address to where you want to save the hdf5 file
-hdf5_train2_path = '/home/tntech.edu/jemoran42/Caffe/All_Networks/Datasets/make/train2.h5'  # address to where you want to save the hdf5 file
-car_train_path = '/home/tntech.edu/jemoran42/Caffe/Cars/Make_of_Cars/*.jpg'
-hdf5_test_path = '/home/tntech.edu/jemoran42/Caffe/All_Networks/Datasets/make/test.h5'
+hdf5_train1_path = '/path_to_file/train1.h5'  # address to where you want to save the hdf5 file
+hdf5_train2_path = '/path_to_file/train2.h5'  # address to where you want to save the hdf5 file
+car_train_path = '/path_to_dir/*.jpg'
+hdf5_test_path = '/path_to_file/test.h5'
 
 # read addresses and labels from the 'train' folder
 addrs = glob.glob(car_train_path)
